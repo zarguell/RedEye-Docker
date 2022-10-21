@@ -4,9 +4,9 @@ on:
   workflow_dispatch:
   push:
     branches:
-      - 'develop'
+      - 'hardened_docker'
   schedule:
-    - cron: '30 4 * * *'
+    - cron: '30 4 * * SUN'
 
 jobs:
   docker:
